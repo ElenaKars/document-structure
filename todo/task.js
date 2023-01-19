@@ -8,7 +8,7 @@ let task, taskList, link
 formTaskControl.addEventListener('submit', (e) => {
   e.preventDefault()
 
-  if (!taskInput.value) {
+  if (!taskInput.value.trim()) {
     return false
   }
   task = document.createElement('div')
